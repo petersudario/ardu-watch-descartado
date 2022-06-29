@@ -1,8 +1,8 @@
 const router = require('express').Router();
-let oxim = require('../models/oxim.model');
+let oxi = require('../models/oxi.model');
 
 router.route('/').get((req, res) => {
-  oxim.find()
+  oxi.find()
     .then(oxime => res.json(oxime))
     .catch(err => res.status(400).json('Error: ' + err));
 });

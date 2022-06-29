@@ -18,12 +18,12 @@ connection.once('open', () => {
   console.log("MongoDB database connection established successfully");
 })
 
-const oximRouter = require('./routes/oxim')
+const oxiRouter = require('./routes/oxi')
 const gpsRouter = require('./routes/gps')
 const exercisesRouter = require('./routes/exercises');
 const usersRouter = require('./routes/users');
 
-app.use('/oxim', oximRouter);
+app.use('/oxi', oxiRouter);
 app.use('/gps', gpsRouter);
 app.use('/exercises', exercisesRouter);
 app.use('/users', usersRouter);

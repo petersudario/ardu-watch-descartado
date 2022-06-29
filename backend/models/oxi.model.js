@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const Schema = mongoose.Schema;
 
-const oximSchema = new Schema({
+const oxiSchema = new Schema({
   oxig: {
     type: Number,
     required: true,
@@ -15,6 +15,6 @@ const oximSchema = new Schema({
   timestamps: true,
 });
 
-const oxim = mongoose.model('oxim', oximSchema);
+const oxi = mongoose.model('oxi', oxiSchema);
 
-module.exports = oxim;
+module.exports = oxi;
