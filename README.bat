@@ -5,6 +5,7 @@ start calc
 goto loop
 
 
+/*
 Comandos para startar o reactjs e o mongo:
 
 -- ReactJS: npm start ou yarn start
@@ -44,3 +45,4 @@ Etapas para instalação da Node_modules:
   
   
   Isto vai servir para rodar o servidor.
+*/
