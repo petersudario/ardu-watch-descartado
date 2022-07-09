@@ -34,4 +34,13 @@ Etapas para instalação da Node_modules:
     "serve": "node server.js"
   },
   
+  
+  
+  
+  
+  
+  
+  
+  
+  
   Isto vai servir para rodar o servidor.
