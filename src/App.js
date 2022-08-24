@@ -1,24 +1,20 @@
-import React from 'react';
+import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { BrowserRouter as Router, Route} from "react-router-dom";
-
-import Navbar from "./components/navbar.component"
-import ExercisesList from "./components/exercises-list.component";
-import EditExercise from "./components/edit-exercise.component";
-import CreateExercise from "./components/create-exercise.component";
-import CreateUser from "./components/create-user.component";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar/navbar";
+import GpsRoute from "./routes/gps.route.js";
+import OximetroRoute from "./routes/oximetro.route.js";
+import Index from "./routes/index";
 
 function App() {
   return (
     <Router>
-      <div className="container">
       <Navbar />
-      <br/>
-      <Route path="/" exact component={ExercisesList} />
-      <Route path="/edit/:id" component={EditExercise} />
-      <Route path="/create" component={CreateExercise} />
-      <Route path="/user" component={CreateUser} />
-      </div>
+      <Routes>
+        <Route path="" element={<Index />} />
+        <Route path="/gps" element={<GpsRoute />} />
+        <Route path="/oxim" element={<OximetroRoute />} />
+      </Routes>
     </Router>
   );
 }

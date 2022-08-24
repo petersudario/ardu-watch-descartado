@@ -1,0 +1,12 @@
+a {
+    padding: 1rem 1rem;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    transition: all 0.3s ease-in;
+    font-size: 1rem;
+  }
+  a:hover {
+    color: gray;
+  }

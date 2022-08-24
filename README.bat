@@ -18,5 +18,5 @@ Etapas para instalação da Node_modules:
 -- Parte React
 1. cd ardu-watch
 2. npm install --save
-3. npm install axios react react-dom react-router-dom react-datepicker react-scripts bootstrap
+3. npm install axios react react-dom react-router-dom react-datepicker react-scripts bootstrap styled-components react-icons
 #>
